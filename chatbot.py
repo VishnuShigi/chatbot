@@ -46,7 +46,7 @@ for intents in data["intent"]:
         
 #Pre-processing the list of words
 words=[w.lower() for w in words if w != "?"]
-stop_words=set(stopwords.words('English'))
+stop_words=stopwords.words('english')
 words=[w for w in words if not w in stop_words]
 words=sorted(list(set(words)))
 
