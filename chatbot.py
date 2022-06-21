@@ -6,7 +6,8 @@ import numpy as np
 import json
 import tensorflow as tf
 import random
-
+nltk.download('stopwords')
+nltk.download('punkt')
 st.set_page_config(
     page_title="JU ChatBott",
     page_icon=":robot:"
